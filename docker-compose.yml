@@ -8,6 +8,8 @@ web:
   ports:
     - 80:4000
     - 443:4001
+  environment:
+    - REDIS_HOST
 database:
   image: convox/postgres
   labels:
