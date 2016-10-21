@@ -1,4 +1,4 @@
-redis_connection = Redis.new(host: ENV["REDIS_HOST"])
+redis_connection = Redis.new(host: ENV['REDIS_HOST'])
 
 begin
   redis ||= Redis::Namespace.new(:test, redis: redis_connection)
